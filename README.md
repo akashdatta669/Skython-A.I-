@@ -1,6 +1,5 @@
 🎓 Skython AI
 The Offline Python Mentor
-Kaggle AI Agents: Intensive Vibe Coding Capstone Project
 
 Track: Agents for Good (Education)
 
