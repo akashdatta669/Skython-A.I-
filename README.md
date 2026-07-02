@@ -40,30 +40,41 @@ Skython AI solves these problems by providing an intelligent mentor that:
 ✅ Tracks long-term learning progress
 
 ⚙️ How Skython AI Works
-                  Student
-                      │
-                      ▼
-            Ask Question / Write Code
-                      │
-                      ▼
-              Mentor Engine (Router)
-        ┌─────────────┼──────────────┐
-        ▼             ▼              ▼
-Teaching Engine  Curriculum Engine  Sandbox
-        │             │              │
-        │             │              │
- Analogy Skill   Mastery Tracker  Safe Python
- Hint Skill      SQLite Memory    Execution
- Code Trace      Progress Map     Error Analysis
-        │             │              │
-        └─────────────┼──────────────┘
-                      │
-                      ▼
-            Personalized Response
-                      │
-                      ▼
-            Student Learns & Improves
-            
+
+    A["👨‍🎓 Student"]
+    B["💻 Gradio UI"]
+    C["🧠 Mentor Engine<br/>(Router)"]
+
+    D["📚 Teaching Engine"]
+    E["🎯 Curriculum Engine"]
+    F["🛡 Secure Python Sandbox"]
+
+    G["🗄 SQLite Memory"]
+    H["🤖 Ollama (Gemma 3)<br/>Offline LLM"]
+
+    I["💬 Personalized Response"]
+    J["📈 Student Learns & Improves"]
+
+    A -->|"Ask Question / Write Code"| B
+    B --> C
+
+    C -->|"Teach"| D
+    C -->|"Track Progress"| E
+    C -->|"Execute Code"| F
+
+    D -->|"Store Progress"| G
+    E -->|"Read / Update Mastery"| G
+
+    D -->|"Generate Explanations"| H
+    F -->|"Analyze Code"| H
+
+    D --> I
+    E --> I
+    F --> I
+
+    I --> J
+    J --> A
+```
 🌟 Key Features
 🧠 Socratic Mentoring
 Skython AI never directly gives away answers.
