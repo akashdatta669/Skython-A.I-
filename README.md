@@ -41,45 +41,42 @@ Skython AI solves these problems by providing an intelligent mentor that:
 
 ⚙️ How Skython AI Works
 
-   ## ⚙️ How Skython AI Works
+   ## ⚙️ How Skython AI Works 
 
 ```mermaid
-flowchart TD
+flowchart TB
 
-    A["👨‍🎓 Student"]
-    B["💻 Gradio UI"]
-    C["🧠 Mentor Engine<br/>(Router)"]
+    Student["👨‍🎓 Student"]
+    UI["💻 Gradio UI"]
+    Router["🧠 Mentor Engine"]
 
-    D["📚 Teaching Engine"]
-    E["🎯 Curriculum Engine"]
-    F["🛡 Secure Python Sandbox"]
+    Teach["📚 Teaching Engine"]
+    Learn["🎯 Curriculum Engine"]
+    Sandbox["🛡 Python Sandbox"]
 
-    G["🗄 SQLite Memory"]
-    H["🤖 Ollama (Gemma 3)<br/>Offline LLM"]
+    LLM["🤖 Ollama (Gemma 3)"]
+    Memory["🗄 SQLite Memory"]
 
-    I["💬 Personalized Response"]
-    J["📈 Student Learns & Improves"]
+    Response["💬 Personalized Response"]
+    Success["📈 Student Learns & Improves"]
 
-    A -->|"Ask Question / Write Code"| B
-    B --> C
+    Student --> UI
+    UI --> Router
 
-    C -->|"Teach"| D
-    C -->|"Track Progress"| E
-    C -->|"Execute Code"| F
+    Router --> Teach
+    Router --> Learn
+    Router --> Sandbox
 
-    D -->|"Store Progress"| G
-    E -->|"Read / Update Mastery"| G
+    Teach --> LLM
+    Learn --> Memory
+    Sandbox --> LLM
 
-    D -->|"Generate Explanations"| H
-    F -->|"Analyze Code"| H
+    LLM --> Response
+    Memory --> Response
 
-    D --> I
-    E --> I
-    F --> I
-
-    I --> J
-    J --> A
+    Response --> Success
 ```
+
 🌟 Key Features
 🧠 Socratic Mentoring
 Skython AI never directly gives away answers.
