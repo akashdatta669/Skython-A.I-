@@ -41,6 +41,11 @@ Skython AI solves these problems by providing an intelligent mentor that:
 
 ⚙️ How Skython AI Works
 
+   ## ⚙️ How Skython AI Works
+
+```mermaid
+flowchart TD
+
     A["👨‍🎓 Student"]
     B["💻 Gradio UI"]
     C["🧠 Mentor Engine<br/>(Router)"]
