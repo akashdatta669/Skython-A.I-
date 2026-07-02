@@ -1,0 +1,33 @@
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Runtime and Logs
+*.log
+.sandbox_tmp/
+
+# SQLite databases
+*.db
+*.db-shm
+*.db-wal
+
+# Virtual environments
+.env
+.venv/
+venv/
+env/
+
+# IDE and editors
+.vscode/
+.idea/
+*.swp
+
+# Testing and type checking
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Node
+node_modules/

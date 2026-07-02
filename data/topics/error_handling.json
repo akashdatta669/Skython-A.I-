@@ -1,0 +1,1 @@
+{"id": "error_handling", "title": "Error Handling", "difficulty": 4, "key_concepts": ["try", "except", "else", "finally", "raise", "Exception types", "custom exceptions"]}
