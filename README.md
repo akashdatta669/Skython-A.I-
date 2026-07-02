@@ -44,37 +44,42 @@ Skython AI solves these problems by providing an intelligent mentor that:
    ## ⚙️ How Skython AI Works 
 
 ```mermaid
-flowchart TB
+flowchart TD
 
-    Student["👨‍🎓 Student"]
-    UI["💻 Gradio UI"]
-    Router["🧠 Mentor Engine"]
+    A["👨‍🎓 Student"]
+    B["💬 Asks a Python Question<br/>or Writes Code"]
+    C["💻 Gradio User Interface"]
+    D["🧠 Mentor Engine (Router)"]
 
-    Teach["📚 Teaching Engine"]
-    Learn["🎯 Curriculum Engine"]
-    Sandbox["🛡 Python Sandbox"]
+    E["📚 Teaching Engine<br/>• Generates analogies<br/>• Gives progressive hints<br/>• Explains Python concepts"]
+    F["🎯 Curriculum Engine<br/>• Checks mastery<br/>• Tracks learning progress<br/>• Suggests next topic"]
+    G["🛡 Secure Python Sandbox<br/>• Runs student code<br/>• Captures output<br/>• Detects errors"]
 
-    LLM["🤖 Ollama (Gemma 3)"]
-    Memory["🗄 SQLite Memory"]
+    H["🗄 SQLite Memory<br/>Stores:<br/>• Student Profile<br/>• Progress<br/>• Misconceptions<br/>• Session History"]
 
-    Response["💬 Personalized Response"]
-    Success["📈 Student Learns & Improves"]
+    I["🤖 Ollama (Gemma 3)<br/>Offline Local LLM"]
 
-    Student --> UI
-    UI --> Router
+    J["💬 Personalized Learning Response<br/>• Explanation<br/>• Hint<br/>• Code Feedback<br/>• Next Exercise"]
 
-    Router --> Teach
-    Router --> Learn
-    Router --> Sandbox
+    K["📈 Student Learns,<br/>Practices & Improves"]
 
-    Teach --> LLM
-    Learn --> Memory
-    Sandbox --> LLM
+    A --> B
+    B --> C
+    C --> D
 
-    LLM --> Response
-    Memory --> Response
+    D --> E
+    D --> F
+    D --> G
 
-    Response --> Success
+    E --> I
+    F --> H
+    G --> I
+
+    H --> J
+    I --> J
+
+    J --> K
+    K --> A
 ```
 
 🌟 Key Features
