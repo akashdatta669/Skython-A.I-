@@ -190,27 +190,58 @@ For the complete development story, see:
 docs/ANTIGRAVITY_WORKFLOW.md
 
 🛠 Installation
-Because Skython AI is offline-first, it runs entirely on your own computer.
+Skython AI is offline-first, it runs entirely on your own computer.
 
 1. Prerequisites
 Python 3.10+
-
 Ollama
 
 2. Start the Local LLM
 ollama serve
 ollama pull gemma3:1b
+
 3. Install Dependencies
 pip install -r requirements.txt
-Alternatively, Windows users can simply run:
 
+🚀 Launch Skython AI
+
+#### Windows (Recommended)
+
+Simply double-click:
+
+```text
 install_and_run.bat
-4. Launch Skython AI
-python main.py
-The interface will automatically open at:
+```
 
-http://localhost:7860
-Enter your name and begin learning Python.
+or run:
+
+```bash
+install_and_run.bat
+```
+
+This script automatically:
+- Installs the required dependencies (if needed)
+- Starts the application
+- Opens the local Gradio server
+
+#### Manual Launch (Windows, macOS & Linux)
+
+If you prefer to run manually:
+
+```bash
+pip install -r requirements.txt
+python main.py
+```
+
+Once Skython AI starts, Gradio will display a local URL similar to:
+
+```text
+Running on local URL: http://127.0.0.1:7860
+```
+
+Open the displayed URL in your browser.
+
+> **Note:** If port **7860** is already in use, Gradio will automatically choose another available port. Always open the URL shown in the terminal.
 
 🎯 Project Goals
 Make Python education accessible offline.
