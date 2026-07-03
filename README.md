@@ -10,12 +10,6 @@ Unlike traditional AI coding assistants that immediately generate solutions, Sky
 
 As an Agent for Good, Skython AI makes high-quality programming education accessible, private, and secure by running completely on the student's own computer.
 
-📌 Project Links
-🎥 Video Demonstration: [Insert YouTube / Loom Link]
-
-📒 Kaggle Notebook: [Insert Kaggle Notebook Link]
-
-💻 Local Demo: Follow the installation guide below.
 
 🚀 Why Skython AI?
 Learning Python is difficult for beginners because they often:
